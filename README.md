@@ -37,3 +37,8 @@ Javascript (in browser) -> OCaml
 --------------------------------
 
 - [Hello World](./Javascript/OCaml/HelloWorld/)
+
+C++ -> C
+--------
+
+- [Hello World](./C++/C/HelloWorld/)
