@@ -11,7 +11,7 @@ Reasons to use several programming languages in the same program:
 
 Vocabulary:
 
-- the 'host' language has the execution entry point controls the flow of execution
+- the 'host' language has the execution entry point and controls the flow of execution
 - the 'guest' language has a function to be called by the host
 
 Examples
