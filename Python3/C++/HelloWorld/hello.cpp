@@ -3,7 +3,7 @@
 #include <iostream>
 
 static PyObject* hello(PyObject* self, PyObject* args) {
-    std::cout << "C++ says 'Hello World!'" << std::endl;
+    std::cout << "GUEST (C++) says 'Hello World!'" << std::endl;
     return Py_None;
 }
 

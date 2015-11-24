@@ -1,7 +1,7 @@
 #include <Python.h>
 
 static PyObject* hello(PyObject* self, PyObject* args) {
-    printf("C says 'Hello World!'\n");
+    printf("GUEST (C) says 'Hello World!'\n");
     return Py_None;
 }
 
