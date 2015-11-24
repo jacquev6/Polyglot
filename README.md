@@ -20,15 +20,15 @@ Examples
 Python 2 -> C++
 ---------------
 
-[Hello World, using Boost.Python](./Python2/C++/HelloWorldUsingBoost/)
+- [Hello World, using Boost.Python](./Python2/C++/HelloWorldUsingBoost/)
 
 Python 3 -> C
 -------------
 
-[Hello World](./Python3/C/HelloWorld/)
+- [Hello World](./Python3/C/HelloWorld/)
 
 Python 3 -> C++
 ---------------
 
-[Hello World](./Python3/C++/HelloWorld/)
-[Hello World, using Boost.Python](./Python3/C++/HelloWorldUsingBoost/)
+- [Hello World](./Python3/C++/HelloWorld/)
+- [Hello World, using Boost.Python](./Python3/C++/HelloWorldUsingBoost/)
