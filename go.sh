@@ -1,12 +1,22 @@
 #!/bin/sh
 
-for go in */go.sh
+cd guests
+./make.sh
+cd ..
+
+for go in examples/*/go.sh
 do
     d=$(dirname $go)
-    echo $d
-    echo $d | sed "s/./-/g"
+    header=$(echo $d | sed "s#^examples/\(.*\)\.\(.*\)\.\(.*\)\.\(.*\)#\1 calls \2 using \3 (\4)#g")
+    echo $header
+    echo $header | sed "s/./-/g"
     cd $d
-    ./go.sh
-    cd ..
+    if ./go.sh
+    then
+        echo "OK"
+    else
+        echo "=======================> ERROR"
+    fi
     echo
+    cd ../..
 done

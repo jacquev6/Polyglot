@@ -1,0 +1,6 @@
+#!/usr/bin/env python3
+
+import hello
+
+print("Host (Python 3) says 'Hello Guest!'")
+hello.hello()
