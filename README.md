@@ -17,10 +17,6 @@ Vocabulary:
 Todo (not exhaustive)
 =====================
 
-Compiled:
-
-- C -> C++
-
 Interpreted:
 
 - http://www.swig.org/
