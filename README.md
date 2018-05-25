@@ -41,7 +41,7 @@ Sometimes, several solutions are presented.
 
 "Hello World" examples are written in a single language, but executed in a runtime environment that's not traditional for this language.
 
-- run a C program in JS (todo)
+- [run a C program in JS](HelloWorlds/C_in_JS.Emscripten)
 - [run a C++ program in JS](HelloWorlds/C++_in_JS.Emscripten)
 - run an OCaml program in JS (todo)
 
