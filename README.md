@@ -41,26 +41,26 @@ Sometimes, several solutions are presented.
 
 "Hello World" examples are written in a single language, but executed in a runtime environment that's not traditional for this language.
 
-- run a C program in JS
-- run a C++ program in JS
-- run an OCaml program in JS
+- run a C program in JS (todo)
+- [run a C++ program in JS](HelloWorlds/C++_in_JS.Emscripten)
+- run an OCaml program in JS (todo)
 
 Guest language calls
 --------------------
 
 Show how to call code written in another language (the guest language), from code executed in its traditional runtime environment (the host language).
 
-- use a C library from a C++ program
-- use a C++ library from a C program
-- use a C library from a Python program
-- use a C library from an OCaml program
+- use a C library from a C++ program (todo)
+- use a C++ library from a C program (todo)
+- use a C library from a Python program (todo)
+- use a C library from an OCaml program (todo)
 
 Host language callbacks
 -----------------------
 
 Show how the code written in guest language can, in turn, call code written in the host language.
 
-- pass a Python callback to a C library
+- pass a Python callback to a C library (todo)
 
 Resource management
 -------------------
