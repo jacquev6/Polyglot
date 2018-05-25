@@ -8,7 +8,7 @@ For the time being, it focuses on the following runtime environments:
 - Native: code compiled for the native CPU
 - Interpreted: code interpreted by an interpreter compiled for the native CPU
 - JVM: code compiled into bytecode interpreted by a JVM
-- Web browser and Node.js (bellow, JS): code translated to JavaScript
+- Web browser and Node.js (below, JS): code translated to JavaScript
 
 And the following languages (with their traditional runtime environment):
 
@@ -74,3 +74,8 @@ External native libraries
 -------------------------
 
 Using native libraries in JS or JVM requires replacing them with JS/JVM implementations with compatible interfaces.
+
+Further readings
+================
+
+CoffeScript has a [list of languages that compile to JS](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS).
