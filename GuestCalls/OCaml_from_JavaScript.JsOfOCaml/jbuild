@@ -1,0 +1,13 @@
+(jbuild_version 1)
+
+(library (
+  (name guest)
+  (modules (guest))
+))
+
+(executable (
+  (name wrapper)
+  (modules (wrapper))
+  (libraries (js_of_ocaml guest))
+  (preprocess (pps (js_of_ocaml-ppx)))
+))
