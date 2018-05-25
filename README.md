@@ -1,7 +1,28 @@
-Polyglot is a collection of examples of programs written in several programming languages.
+*Polyglot* is a collection of examples of how to interface pieces of code written in different languages,
+and/or execute code in a runtime environment that's not traditional for its language.
+Calling a C++ library from a Python program, or executing OCaml code in a web browser,
+are two examples amongst what *Polyglot* demonstrates.
 
-Introduction
-============
+For the time being, it focuses on the following runtime environments:
+
+- Native: code compiled for the native CPU
+- Interpreted: code interpreted by an interpreter compiled for the native CPU
+- JVM: code compiled into bytecode interpreted by a JVM
+- Web browser and Node.js (bellow, JS): code translated to JavaScript
+
+And the following languages (with their traditional runtime environment):
+
+- C (Native)
+- C++ (Native)
+- Python (Interpreted)
+- OCaml (Native)
+- Java (JVM)
+- JavaScript (JS)
+
+Contributions are greatly appreciated.
+
+Why?
+====
 
 Reasons to use several programming languages in the same program:
 
@@ -9,27 +30,47 @@ Reasons to use several programming languages in the same program:
 - sharing: the same code runs on several environments
 - performance: a part of a program is compiled natively for execution speed while other parts are interpreted to ease development
 
-Vocabulary:
+Examples by increasing complexity level
+=======================================
 
-- the 'host' language has the execution entry point and controls the flow of execution
-- the 'guest' language has a function to be called by the host
+The examples demonstrates some problems encountered when interfacing several languages and/or runtime environments, and some solutions!
+Sometimes, several solutions are presented.
 
-Todo (not exhaustive)
-=====================
+"Hello World"s
+--------------
 
-Interpreted:
+"Hello World" examples are written in a single language, but executed in a runtime environment that's not traditional for this language.
 
-- http://www.swig.org/
-- C/C++ -> Python
-- Python -> C/C++ using https://cffi.readthedocs.org/en/latest/
+- run a C program in JS
+- run a C++ program in JS
+- run an OCaml program in JS
 
-Browser:
+Guest language calls
+--------------------
 
-- HTML/Javascript -> Python (http://pyjs.org/ https://github.com/rusthon/Rusthon http://www.brython.info/ http://www.skulpt.org/)
-- HTML/Javascript -> Java (https://en.wikipedia.org/wiki/Google_Web_Toolkit)
-- HTML/Javascript -> Coffescript
-- OCaml -> Javascript (JsOfOCaml.Unsafe.call)
+Show how to call code written in another language (the guest language), from code executed in its traditional runtime environment (the host language).
 
-JVM:
+- use a C library from a C++ program
+- use a C++ library from a C program
+- use a C library from a Python program
+- use a C library from an OCaml program
 
-- https://en.wikipedia.org/wiki/List_of_JVM_languages
+Host language callbacks
+-----------------------
+
+Show how the code written in guest language can, in turn, call code written in the host language.
+
+- pass a Python callback to a C library
+
+Resource management
+-------------------
+
+These examples show how to allocate and free resources managed by guest language.
+
+Iterators
+---------
+
+External native libraries
+-------------------------
+
+Using native libraries in JS or JVM requires replacing them with JS/JVM implementations with compatible interfaces.
