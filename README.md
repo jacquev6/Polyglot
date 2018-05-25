@@ -43,7 +43,7 @@ Sometimes, several solutions are presented.
 
 - [run a C program in JS](HelloWorlds/C_in_JS.Emscripten)
 - [run a C++ program in JS](HelloWorlds/C++_in_JS.Emscripten)
-- run an OCaml program in JS (todo)
+- [run an OCaml program in JS](HelloWorlds/OCaml_in_JS.JsOfOCaml)
 
 Guest language calls
 --------------------
