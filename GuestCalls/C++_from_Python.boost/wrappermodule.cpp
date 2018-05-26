@@ -1,8 +1,8 @@
 #include <boost/python.hpp>
 
-#include "../../guests/C++/hello.hpp"
+#include "guest.hpp"
 
-BOOST_PYTHON_MODULE(hello)
+BOOST_PYTHON_MODULE(wrapper)
 {
     boost::python::def("hello", hello);
 }
