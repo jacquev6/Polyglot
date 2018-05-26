@@ -54,7 +54,7 @@ Show how to call code written in another language (the guest language), from cod
 - use a C library from a C++ program (todo)
 - use a C++ library from a C program (todo)
 - use a C library from a Python program (todo)
-- use a C library from an OCaml program (todo)
+- [use a C library from an OCaml program](GuestCalls/C_from_OCaml.ctypes-foreign)
 
 Host language callbacks
 -----------------------
