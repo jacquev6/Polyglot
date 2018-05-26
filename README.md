@@ -53,10 +53,12 @@ Show how to call code written in another language (the guest language), from cod
 - [use an OCaml library from a JavaScript program](GuestCalls/OCaml_from_JavaScript.JsOfOCaml)
 - use a C library from a C++ program (todo)
 - use a C++ library from a C program (todo)
-- [use a C library from a Python (2 or 3) program](GuestCalls/C_from_Python.ctypes)
-- [use a C library from a Python 3 program](GuestCalls/C_from_Python3.extension)
-- [use a C++ library from a Python (2 or 3) program](GuestCalls/C++_from_Python.boost)
-- [use a C++ library from a Python 3 program](GuestCalls/C++_from_Python3.extension)
+- use a C library from a Python program
+    - [with ctypes](GuestCalls/C_from_Python.ctypes)
+    - [with an extension](GuestCalls/C_from_Python.extension)
+- use a C++ library from a Python program
+    - [with Boost.Python](GuestCalls/C++_from_Python.boost)
+    - [with an extension](GuestCalls/C++_from_Python.extension)
 - [use a C library from an OCaml program](GuestCalls/C_from_OCaml.ctypes-foreign)
 
 Host language callbacks
