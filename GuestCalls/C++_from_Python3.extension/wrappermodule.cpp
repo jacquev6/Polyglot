@@ -1,6 +1,6 @@
 #include <Python.h>
 
-#include "../../guests/C++/hello.hpp"
+#include "guest.hpp"
 
 static PyObject* hello_python(PyObject* self, PyObject* args) {
     hello();
@@ -14,12 +14,12 @@ static PyMethodDef methods[] = {
 
 static struct PyModuleDef module = {
    PyModuleDef_HEAD_INIT,
-   "hello",
+   "wrapper",
    "Say hello",
    -1,
    methods
 };
 
-PyMODINIT_FUNC PyInit_hello(void) {
+PyMODINIT_FUNC PyInit_wrapper(void) {
     return PyModule_Create(&module);
 }
