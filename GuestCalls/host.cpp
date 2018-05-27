@@ -1,4 +1,3 @@
-// @todo Move this file to .., with other host.* source files
 #include <iostream>
 
 #include "wrapper.hpp"
