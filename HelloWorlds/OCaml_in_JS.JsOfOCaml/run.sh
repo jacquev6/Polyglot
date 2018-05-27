@@ -2,6 +2,8 @@
 
 set -o errexit
 
-jbuilder build hello.bc.js
+ocamlfind ocamlc ../hello.ml -o hello.byte
 
-node _build/default/hello.bc.js
+js_of_ocaml hello.byte -o hello.js
+
+node hello.js

@@ -1,0 +1,7 @@
+*.pyc
+*.o
+*.cm*
+*.so
+*.byte
+*.exe
+*.wasm

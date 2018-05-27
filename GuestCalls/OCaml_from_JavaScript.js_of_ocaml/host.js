@@ -1,3 +1,3 @@
-var wrapper = require("./_build/default/wrapper.bc.js")
+var wrapper = require("./wrapper.js")
 
 console.log(wrapper.greet("JavaScript"))
