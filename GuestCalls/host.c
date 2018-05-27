@@ -1,4 +1,3 @@
-// @todo Move this file to .., with other host.* source files
 #include <stdio.h>
 
 #include "wrapper.h"
