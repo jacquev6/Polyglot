@@ -1,0 +1,1 @@
+val greet: string -> string
