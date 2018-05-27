@@ -6,4 +6,4 @@ ocamlfind ocamlc -linkpkg -package js_of_ocaml-ppx -package js_of_ocaml -I .. ..
 
 js_of_ocaml wrapper.byte -o wrapper.js
 
-node host.js
+NODE_PATH=.:$NODE_PATH node ../host.js
