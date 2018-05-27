@@ -1,5 +1,7 @@
-import ctypes
+from __future__ import print_function
 
-hello = ctypes.CDLL("./libguest.so")
+import sys
 
-hello.hello()
+import wrapper
+
+print(wrapper.greet("Python {}".format(sys.version_info.major)))

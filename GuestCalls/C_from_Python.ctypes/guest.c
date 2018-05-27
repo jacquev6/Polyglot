@@ -1,5 +1,5 @@
 #include <stdio.h>
 
-void hello() {
-    printf("Hello, World!\n");
+int greet(char* buffer, const char* guest) {
+    return sprintf(buffer, "Hello %s, I'm C!", guest);
 }

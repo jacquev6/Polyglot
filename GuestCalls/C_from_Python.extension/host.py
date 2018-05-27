@@ -1,3 +1,7 @@
+from __future__ import print_function
+
+import sys
+
 import wrapper
 
-wrapper.hello()
+print(wrapper.greet("Python {}".format(sys.version_info.major)))
