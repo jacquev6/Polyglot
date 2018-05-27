@@ -51,8 +51,12 @@ Guest language calls
 Show how to call code written in another language (the guest language), from code executed in its traditional runtime environment (the host language).
 
 - [use an OCaml library from a JavaScript program](GuestCalls/OCaml_from_JavaScript.js_of_ocaml)
-- [use a C library from a C++ program](GuestCalls/C_from_C++.extern_C)
-- [use a C++ library from a C program](GuestCalls/C++_from_C.extern_C)
+- use a C library from a C++ program
+    - [with extern C](GuestCalls/C_from_C++.extern_C)
+    - [compoiling C code with C++ compiler](GuestCalls/C_from_C++.C_as_C++)
+- use a C++ library from a C program
+    - [with extern C](GuestCalls/C++_from_C.extern_C)
+    - [compiling C code with C++ compiler](GuestCalls/C++_from_C.C_as_C++)
 - use a C library from a Python program
     - [with ctypes](GuestCalls/C_from_Python.ctypes)
     - [with an extension](GuestCalls/C_from_Python.extension)
