@@ -4,5 +4,5 @@
 
 BOOST_PYTHON_MODULE(wrapper)
 {
-    boost::python::def("hello", hello);
+    boost::python::def("greet", greet);
 }

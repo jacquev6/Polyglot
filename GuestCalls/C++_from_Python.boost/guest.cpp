@@ -1,5 +1,7 @@
-#include <iostream>
+#include <sstream>
 
-void hello() {
-    std::cout << "Hello, World!" << std::endl;
+std::string greet(const std::string& guest) {
+    std::ostringstream oss;
+    oss << "Hello " << guest << ", I'm C++!";
+    return oss.str();
 }
