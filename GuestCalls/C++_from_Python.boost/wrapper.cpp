@@ -1,6 +1,6 @@
 #include <boost/python.hpp>
 
-#include "guest.hpp"
+#include "../guest.hpp"
 
 BOOST_PYTHON_MODULE(wrapper)
 {

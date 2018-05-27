@@ -1,7 +1,7 @@
 import ctypes
 import sys
 
-libguest = ctypes.CDLL("./libguest.so")
+libguest = ctypes.CDLL("../libguest_c.so")
 
 def greet(guest):
     if sys.hexversion >= 0x03000000:
