@@ -1,3 +1,5 @@
+#include "guest.h"
+
 #include <stdio.h>
 
 int greet(char* buffer, const char* guest) {

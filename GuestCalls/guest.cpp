@@ -1,3 +1,5 @@
+#include "guest.hpp"
+
 #include <sstream>
 
 std::string greet(const std::string& guest) {
