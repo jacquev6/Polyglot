@@ -1,7 +1,7 @@
 #include <boost/python.hpp>
 namespace bp = boost::python;
 
-#include "../guest.hpp"
+#include "guest.hpp"
 
 BOOST_PYTHON_MODULE(wrapper)
 {

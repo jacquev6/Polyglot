@@ -1,6 +1,6 @@
 #include <Python.h>
 
-#include "../guest.h"
+#include "guest.h"
 
 static PyObject* wrapped_greet(PyObject* self, PyObject* args) {
     const char* guest;

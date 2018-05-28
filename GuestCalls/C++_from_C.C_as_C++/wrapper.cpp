@@ -1,6 +1,6 @@
 #include <string.h>
 
-#include "../guest.hpp"
+#include "guest.hpp"
 
 void greet(char* buffer, const char* guest) {
     std::string greeting = greet(guest);

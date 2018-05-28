@@ -2,6 +2,8 @@
 
 set -o errexit
 
-g++ -I. ../host.c wrapper.cpp -L.. -lguest_cpp -o host.exe
+g++ -fPIC -shared guest.cpp -o libguest.so
 
-LD_LIBRARY_PATH=..:$LD_LIBRARY_PATH ./host.exe
+g++ host.c wrapper.cpp -L. -lguest -o host.exe
+
+LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH ./host.exe

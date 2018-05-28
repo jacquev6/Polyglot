@@ -1,6 +1,6 @@
 #include "wrapper.hpp"
 
-#include "../guest.h"
+#include "guest.h"
 
 std::string greet(const std::string& guest) {
     char greeting[100] = {};

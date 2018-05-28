@@ -1,7 +1,7 @@
 #include "wrapper.hpp"
 
 extern "C" {
-#include "../guest.h"
+#include "guest.h"
 }
 
 std::string greet(const std::string& guest) {
