@@ -108,7 +108,7 @@ The [Boost.Python](https://www.boost.org/doc/libs/1_67_0/libs/python/doc/html/in
 
 - [**example**: call a C library from a Python program, with a plain extension](GuestCalls/C_from_Python.extension)
 - [**example**: call a C++ library from a Python program, with a plain extension](GuestCalls/C++_from_Python.extension)
-- [**example**: call a C++ library from a Python program, with Boost.Python](GuestCalls/C++_from_Python.boost)
+- [**example**: call a C++ library from a Python program, using Boost.Python](GuestCalls/C++_from_Python.boost)
 
 ### OCaml host
 
@@ -127,14 +127,13 @@ This is the only way to run guest code in a web browser.
 
 <!-- @todo In node.js however, JavaScript can be extended -->
 
-<!--
-@todo Host language callbacks
+Host language callbacks
 -----------------------
 
 Show how the code written in guest language can, in turn, call code written in the host language.
 
-- pass a Python callback to a C library (todo)
--->
+- [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.boost)
+
 <!--
 @todo Resource management
 -------------------

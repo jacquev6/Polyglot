@@ -17,3 +17,11 @@ echo
 cd GuestCalls
 ./run_all.sh
 cd ..
+
+echo '=============='
+echo 'Host callbacks'
+echo '=============='
+echo
+cd HostCallbacks
+./run_all.sh
+cd ..
