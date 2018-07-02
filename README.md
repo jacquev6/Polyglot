@@ -73,6 +73,7 @@ Ocsigen seems to have chosen Js_of_ocaml, so I'm not going to try it.
 [Many translators](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS#python) need to be evaluated.
 
 - [**example**: run a Python program in JS, using JavaScripthon](HelloWorlds/Python_in_JS.JavaScripthon)
+- [**example**: run a Python program in JS, using Transcrypt](HelloWorlds/Python_in_JS.Transcrypt)
 
 Guest language calls
 --------------------
