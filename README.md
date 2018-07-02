@@ -68,6 +68,12 @@ Ocsigen seems to have chosen Js_of_ocaml, so I'm not going to try it.
 
 <!--@todo Evaluate [BuckleScript](https://bucklescript.github.io/).-->
 
+#### Python
+
+[Many translators](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS#python) need to be evaluated.
+
+- [**example**: run a Python program in JS, using JavaScripthon](HelloWorlds/Python_in_JS.JavaScripthon)
+
 Guest language calls
 --------------------
 
