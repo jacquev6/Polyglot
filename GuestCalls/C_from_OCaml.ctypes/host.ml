@@ -1,1 +1,1 @@
-../host.ml
+let () = print_endline (Wrapper.greet "OCaml")
