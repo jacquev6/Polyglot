@@ -52,8 +52,8 @@ To run in [node.js](https://nodejs.org/), a program must be translated to JavaSc
 [Emscripten](http://emscripten.org/) translates the [LLVM](http://llvm.org/) bitcode to JavaScript.
 It can be used to translate any language with an LLVM-based compiler.
 
-- [**example**: run a C program in JS, using Emscripten](HelloWorlds/C_in_JS.emscripten)
-- [**example**: run a C++ program in JS, using Emscripten](HelloWorlds/C++_in_JS.emscripten)
+- [**example**: run a C program in JS, using Emscripten](HelloWorlds/C_in_JS.Emscripten)
+- [**example**: run a C++ program in JS, using Emscripten](HelloWorlds/C++_in_JS.Emscripten)
 
 #### OCaml
 
@@ -115,7 +115,7 @@ The [Boost.Python](https://www.boost.org/doc/libs/1_67_0/libs/python/doc/html/in
 
 - [**example**: call a C library from a Python program, with a plain extension](GuestCalls/C_from_Python.extension)
 - [**example**: call a C++ library from a Python program, with a plain extension](GuestCalls/C++_from_Python.extension)
-- [**example**: call a C++ library from a Python program, using Boost.Python](GuestCalls/C++_from_Python.boost)
+- [**example**: call a C++ library from a Python program, using Boost.Python](GuestCalls/C++_from_Python.Boost)
 
 ### OCaml host
 
@@ -146,7 +146,7 @@ Host language callbacks
 
 Show how the code written in guest language can, in turn, call code written in the host language.
 
-- [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.boost)
+- [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.Boost)
 - [**example**: pass a JavaScript callback to a Python library, using Transcrypt](HostCallbacks/Python_from_JavaScript.Transcrypt)
 
 <!--
