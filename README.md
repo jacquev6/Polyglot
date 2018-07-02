@@ -131,10 +131,15 @@ The [Boost.Python](https://www.boost.org/doc/libs/1_67_0/libs/python/doc/html/in
 
 Some languages can be translated to JavaScript.
 This is the only way to run guest code in a web browser.
+<!-- @todo In node.js however, JavaScript can be extended -->
+
+#### OCaml guest
 
 - [**example**: call OCaml code from a JavaScript program, using Js_of_ocaml](GuestCalls/OCaml_from_JavaScript.js_of_ocaml)
 
-<!-- @todo In node.js however, JavaScript can be extended -->
+#### Python guest
+
+- [**example**: call Python code from a JavaScript program, using Transcrypt](GuestCalls/Python_from_Javascript.Transcrypt)
 
 Host language callbacks
 -----------------------
@@ -142,6 +147,7 @@ Host language callbacks
 Show how the code written in guest language can, in turn, call code written in the host language.
 
 - [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.boost)
+- [**example**: pass a JavaScript callback to a Python library, using Transcrypt](HostCallbacks/Python_from_JavaScript.Transcrypt)
 
 <!--
 @todo Resource management
