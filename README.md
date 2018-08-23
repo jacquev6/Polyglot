@@ -123,9 +123,9 @@ The [Boost.Python](https://www.boost.org/doc/libs/1_67_0/libs/python/doc/html/in
 
 - [**example**: call a C library from an OCaml program, using ctypes](GuestCalls/C_from_OCaml.ctypes)
 
-<!-- @todo OCaml can also be [extended](http://caml.inria.fr/pub/docs/manual-ocaml/intfc.html) in C.
+OCaml can also be [extended](http://caml.inria.fr/pub/docs/manual-ocaml/intfc.html) in C.
 
-- [**example**: call a C library from a OCaml program, with an extension](GuestCalls/C_from_OCaml.extension) -->
+- [**example**: call a C library from an OCaml program, with an extension](GuestCalls/C_from_OCaml.extension)
 
 ### JavaScript host
 
