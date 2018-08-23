@@ -1,3 +1,3 @@
-var wrapper = require("wrapper")
+const wrapper = require("wrapper")
 
 console.log(wrapper.greet("JavaScript"))
