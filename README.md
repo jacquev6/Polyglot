@@ -148,6 +148,7 @@ Show how the code written in guest language can, in turn, call code written in t
 
 - [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.Boost)
 - [**example**: pass a JavaScript callback to a Python library, using Transcrypt](HostCallbacks/Python_from_JavaScript.Transcrypt)
+- [**example**: pass a OCaml callback to a C library, with an extension](HostCallbacks/C_from_OCaml.extension)
 
 <!--
 @todo Resource management
