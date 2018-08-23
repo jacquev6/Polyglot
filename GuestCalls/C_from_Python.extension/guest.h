@@ -1,1 +1,1 @@
-int greet(char* buffer, const char* guest);
+../guest.h
