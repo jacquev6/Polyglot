@@ -131,7 +131,6 @@ OCaml can also be [extended](http://caml.inria.fr/pub/docs/manual-ocaml/intfc.ht
 
 Some languages can be translated to JavaScript.
 This is the only way to run guest code in a web browser.
-<!-- @todo In node.js however, JavaScript can be extended -->
 
 #### OCaml guest
 
@@ -140,6 +139,12 @@ This is the only way to run guest code in a web browser.
 #### Python guest
 
 - [**example**: call Python code from a JavaScript program, using Transcrypt](GuestCalls/Python_from_Javascript.Transcrypt)
+
+In node.js however, JavaScript can be [extended](https://nodejs.org/api/addons.html):
+
+#### C++ guest
+
+- [**example**: call C++ code from a JavaScript program, with a N-API extension](GuestCalls/C++_from_Javascript.extension)
 
 Host language callbacks
 -----------------------
