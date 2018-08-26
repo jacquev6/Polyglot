@@ -4,6 +4,7 @@ set -o errexit
 
 # @todo Build libguest.so beforehand (currently it's built by node-gyp with wrapper.cpp):
 # g++ -fPIC -shared guest.cpp -o libguest.so
+# THEN change Readme: "call C++ code" -> "call a C++ library"
 
 # @todo Demonstrate low-level build commands
 node-gyp configure

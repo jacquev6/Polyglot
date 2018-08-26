@@ -6,8 +6,7 @@ are two examples amongst what *Polyglot* demonstrates.
 For the time being, it focuses on the following runtime environments:
 
 - Native: code compiled for the native CPU
-- Interpreted: code interpreted by an interpreter compiled for the native CPU
-- JVM: code compiled into bytecode interpreted by a JVM
+- Interpreted: code run by an interpreter compiled for the native CPU
 - Web browser and Node.js (below, JS): code translated to JavaScript
 
 And the following languages (with their traditional runtime environment):
@@ -15,7 +14,6 @@ And the following languages (with their traditional runtime environment):
 - [C and C++](http://en.cppreference.com/w/) (Native)
 - [Python](https://www.python.org/) (Interpreted)
 - [OCaml](https://ocaml.org/) (Native)
-- [Java](https://java.com/) (JVM)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (JS)
 
 Contributions are greatly appreciated.
@@ -43,7 +41,7 @@ This is most often achieved by some sort of cross-compilation.
 
 ### Running on JS environment
 
-To run in [node.js](https://nodejs.org/), a program must be translated to JavaScript.
+To run in [node.js](https://nodejs.org/), a program can be translated to JavaScript.
 
 [CoffeScript](https://coffeescript.org/) maintains a [list of languages that compile to JavaScript](https://github.com/jashkenas/coffeescript/wiki/List-of-languages-that-compile-to-JS).
 
@@ -62,8 +60,6 @@ It can be used to translate any language with an LLVM-based compiler.
 - [**example**: run an OCaml program in JS, using Js_of_ocaml](HelloWorlds/OCaml_in_JS.js_of_ocaml)
 
 The latest commit in [oBrowser](https://github.com/ocsigen/obrowser) dates from 2011.
-Ocsigen seems to have chosen Js_of_ocaml, so I'm not going to try it.
-
 [Ocamljs](https://github.com/jaked/ocamljs) seems unmaintained as well (last commit in 2010).
 
 <!--@todo Evaluate [BuckleScript](https://bucklescript.github.io/).-->
@@ -152,7 +148,7 @@ Host language callbacks
 Show how the code written in guest language can, in turn, call code written in the host language.
 
 - [**example**: pass a Python callback to a C++ library, using Boost.Python](HostCallbacks/C++_from_Python.Boost)
-- [**example**: pass a JavaScript callback to a Python library, using Transcrypt](HostCallbacks/Python_from_JavaScript.Transcrypt)
+- [**example**: pass a JavaScript callback to Python code, using Transcrypt](HostCallbacks/Python_from_JavaScript.Transcrypt)
 - [**example**: pass a OCaml callback to a C library, with an extension](HostCallbacks/C_from_OCaml.extension)
 
 <!--
