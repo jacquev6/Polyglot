@@ -33,6 +33,8 @@ Running the examples
 To run all the examples provided in this project, you need a reasonably recent version of Bash (other shells might work but are unsupported), and a reasonably recent version of Docker.
 
 Then `./run.sh` should run each example in Docker containers.
+The first time you run it, it will download and install many things in Docker images; be patient.
+You can also limit the scope that you run by passing arguments to the script, *e.g.* `./run.sh examples/C-runs-in-JS`.
 
 Code organization
 =================
