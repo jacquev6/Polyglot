@@ -8,4 +8,4 @@ js_of_ocaml main.byte
 node main.js
 
 # Clean-up
-rm main.byte main.js
+rm main.byte main.cmi main.cmo main.js
