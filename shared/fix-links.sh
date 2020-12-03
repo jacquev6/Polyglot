@@ -5,6 +5,8 @@ cd "$(dirname "${BASH_SOURCE[0]}")/.."
 
 find examples -type l -delete
 
+shopt -s nullglob
+
 for flavor in $(find shared/X-calls-Y -type d -mindepth 1)
 do
   flavor=$(basename $flavor)
@@ -17,19 +19,26 @@ do
     cd - >/dev/null
   done
 
-  for d in examples/C++-calls-*/*/$flavor
-  do
-    cd $d
-    ln -s ../../../../shared/X-calls-Y/$flavor/host.cpp .
-    ln -s ../../../../shared/X-calls-Y/$flavor/wrapper.hpp .
-    cd - >/dev/null
-  done
-
   for d in examples/*-calls-C++/*/$flavor
   do
     cd $d
     ln -s ../../../../shared/X-calls-Y/$flavor/guest.hpp .
     ln -s ../../../../shared/X-calls-Y/$flavor/guest.cpp .
+    cd - >/dev/null
+  done
+
+  for d in examples/*-calls-Fortran/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.f90 .
+    cd - >/dev/null
+  done
+
+  for d in examples/C++-calls-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/host.cpp .
+    ln -s ../../../../shared/X-calls-Y/$flavor/wrapper.hpp .
     cd - >/dev/null
   done
 
