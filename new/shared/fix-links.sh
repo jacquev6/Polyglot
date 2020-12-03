@@ -36,4 +36,11 @@ do
     ln -s ../../../../shared/X-runs-in-E/$flavor/main.ml .
     cd - >/dev/null
   done
+
+  for d in examples/Python-runs-in-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-runs-in-E/$flavor/main.py .
+    cd - >/dev/null
+  done
 done

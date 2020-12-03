@@ -56,3 +56,7 @@ do
 
   echo
 done
+
+echo "=========="
+echo "=== OK ==="
+echo "=========="
