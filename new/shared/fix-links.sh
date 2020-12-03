@@ -43,4 +43,18 @@ do
     ln -s ../../../../shared/X-runs-in-E/$flavor/main.py .
     cd - >/dev/null
   done
+
+  for d in examples/C-runs-in-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-runs-in-E/$flavor/main.c .
+    cd - >/dev/null
+  done
+
+  for d in examples/C++-runs-in-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-runs-in-E/$flavor/main.cpp .
+    cd - >/dev/null
+  done
 done
