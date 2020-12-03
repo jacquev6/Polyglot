@@ -52,7 +52,7 @@ do
     --volume $PWD:/polyglot \
     --workdir /polyglot/$example \
     $(docker build $docker_path --quiet) \
-    bash -e -x build-and-run.sh
+    bash -e $(if $verbose; then echo -x; fi) build-and-run.sh
 
   echo
 done

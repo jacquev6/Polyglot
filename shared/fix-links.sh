@@ -24,6 +24,22 @@ do
     ln -s ../../../../shared/X-calls-Y/$flavor/wrapper.hpp .
     cd - >/dev/null
   done
+
+  for d in examples/*-calls-C++/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.hpp .
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.cpp .
+    cd - >/dev/null
+  done
+
+  for d in examples/C-calls-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/host.c .
+    ln -s ../../../../shared/X-calls-Y/$flavor/wrapper.h .
+    cd - >/dev/null
+  done
 done
 
 for flavor in $(find shared/X-runs-in-E -type d -mindepth 1)
