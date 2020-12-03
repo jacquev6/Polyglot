@@ -1,0 +1,1 @@
+int wrapper(int, int);
