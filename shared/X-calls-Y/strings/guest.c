@@ -2,6 +2,6 @@
 
 #include <stdio.h>
 
-int guest(char* buffer, const char* guest) {
-    return sprintf(buffer, "Hello %s, I'm C!", guest);
+int guest(char* buffer, const char* host) {
+    return sprintf(buffer, "Hello %s, I'm C!", host);
 }

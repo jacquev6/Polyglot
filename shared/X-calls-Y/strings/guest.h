@@ -1,1 +1,1 @@
-int guest(char* buffer, const char* guest);
+int guest(char* buffer, const char* host);

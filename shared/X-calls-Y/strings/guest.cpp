@@ -2,8 +2,8 @@
 
 #include "guest.hpp"
 
-std::string guest(const std::string& guest) {
+std::string guest(const std::string& host) {
     std::ostringstream oss;
-    oss << "Hello " << guest << ", I'm C++!";
+    oss << "Hello " << host << ", I'm C++!";
     return oss.str();
 }

@@ -4,8 +4,8 @@ extern "C" {
     #include "guest.h"
 }
 
-std::string wrapper(const std::string& guest_name) {
+std::string wrapper(const std::string& host) {
     char greeting[100] = {};
-    guest(greeting, guest_name.c_str());
+    guest(greeting, host.c_str());
     return greeting;
 }

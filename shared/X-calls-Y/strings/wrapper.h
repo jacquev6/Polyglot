@@ -1,1 +1,1 @@
-void wrapper(char* buffer, const char* guest);
+void wrapper(char* buffer, const char* host);

@@ -2,6 +2,6 @@
 
 #include "guest.hpp"
 
-void wrapper(char* buffer, const char* guest_name) {
-    strcpy(buffer, guest(guest_name).c_str());
+void wrapper(char* buffer, const char* host) {
+    strcpy(buffer, guest(host).c_str());
 }

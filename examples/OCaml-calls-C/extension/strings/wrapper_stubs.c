@@ -4,10 +4,10 @@
 
 #include "guest.h"
 
-value wrapper_stub(value guest_name) {
-    CAMLparam1(guest_name);
+value wrapper_stub(value host) {
+    CAMLparam1(host);
     char buffer[100];
-    guest(buffer, String_val(guest_name));
+    guest(buffer, String_val(host));
     CAMLlocal1(r);
     r = caml_copy_string(buffer);
     CAMLreturn(r);
