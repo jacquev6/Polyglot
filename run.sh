@@ -38,6 +38,11 @@ do
   docker_path=$example
   while ! [ -f $docker_path/Dockerfile ]
   do
+    if [ $docker_path == "." ]
+    then
+      echo No Dockerfile found
+      exit 1
+    fi
     docker_path=$(dirname $docker_path)
   done
 

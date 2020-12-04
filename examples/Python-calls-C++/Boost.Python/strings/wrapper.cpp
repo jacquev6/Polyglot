@@ -5,5 +5,5 @@ namespace bp = boost::python;
 
 BOOST_PYTHON_MODULE(wrapper)
 {
-    bp::def("greet", greet);
+    bp::def("wrapper", guest);
 }
