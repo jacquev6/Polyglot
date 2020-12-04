@@ -3,9 +3,9 @@ namespace bp = boost::python;
 
 #include "guest.hpp"
 
-std::string wrapped_greet(const std::string& guest, bp::object f) {
-    return greet(
-        guest,
+std::string wrapper(const std::string& host, bp::object f) {
+    return guest(
+        host,
         [f](const std::string& s) {
             return bp::extract<std::string>(f(s))();
         }
@@ -14,5 +14,5 @@ std::string wrapped_greet(const std::string& guest, bp::object f) {
 
 BOOST_PYTHON_MODULE(wrapper)
 {
-    bp::def("greet", wrapped_greet);
+    bp::def("wrapper", wrapper);
 }
