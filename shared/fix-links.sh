@@ -50,6 +50,13 @@ do
     cd - >/dev/null
   done
 
+  for d in examples/Python-calls-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/host.py .
+    cd - >/dev/null
+  done
+
   for d in examples/OCaml-calls-*/*/$flavor
   do
     cd $d

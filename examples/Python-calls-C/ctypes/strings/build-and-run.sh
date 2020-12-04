@@ -1,9 +1,8 @@
-#!/bin/sh
-
-set -o errexit
-
+# Compile C code as a dynamic library
 gcc -fPIC -shared guest.c -o libguest.so
 
-PYTHONPATH=.:$PYTHONPATH python2 ./host.py
-
+# Run
 PYTHONPATH=.:$PYTHONPATH python3 ./host.py
+
+# Clean-up
+rm libguest.so

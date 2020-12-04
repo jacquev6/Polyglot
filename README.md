@@ -12,7 +12,7 @@ For the time being, it focuses on the following runtime environments:
 And the following languages (with their traditional runtime environment):
 
 - [C and C++](http://en.cppreference.com/w/) (Native)
-- [Python](https://www.python.org/) (Interpreted)
+- [Python 3](https://www.python.org/) (Interpreted)
 - [OCaml](https://ocaml.org/) (Native)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (JS)
 
