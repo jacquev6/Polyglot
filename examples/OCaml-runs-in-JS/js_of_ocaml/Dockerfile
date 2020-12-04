@@ -5,4 +5,5 @@ RUN opam install js_of_ocaml
 
 RUN set -x \
  && sudo apt-get update \
- && sudo apt-get install --yes nodejs
+ && sudo apt-get install --yes nodejs \
+ && opam install js_of_ocaml
