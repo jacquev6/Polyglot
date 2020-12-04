@@ -27,6 +27,14 @@ do
     cd - >/dev/null
   done
 
+  for d in examples/*-calls-OCaml/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.mli .
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.ml .
+    cd - >/dev/null
+  done
+
   for d in examples/*-calls-Fortran/*/$flavor
   do
     cd $d
@@ -62,6 +70,13 @@ do
     cd $d
     ln -s ../../../../shared/X-calls-Y/$flavor/host.ml .
     ln -s ../../../../shared/X-calls-Y/$flavor/wrapper.mli .
+    cd - >/dev/null
+  done
+
+  for d in examples/JavaScript-calls-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/host.js .
     cd - >/dev/null
   done
 done

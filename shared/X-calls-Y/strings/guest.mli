@@ -1,0 +1,1 @@
+val guest: string -> string
