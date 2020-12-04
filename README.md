@@ -34,6 +34,7 @@ To run all the examples provided in this project, you need a reasonably recent v
 
 Then `./run.sh` should run each example in Docker containers.
 The first time you run it, it will download and install many things in Docker images; be patient.
+You may want to use the `--verbose` flag to see what's going on.
 You can also limit the scope that you run by passing arguments to the script, *e.g.* `./run.sh examples/C-runs-in-JS`.
 
 Code organization
