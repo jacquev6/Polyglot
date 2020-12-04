@@ -8,4 +8,4 @@ js_of_ocaml wrapper.byte -o wrapper.js
 NODE_PATH=.:$NODE_PATH node host.js
 
 # Clean-up
-rm host.js wrapper.{cmi,cmo,byte} guest.{cmi,cmo}
+rm wrapper.{cmi,cmo,byte,js} guest.{cmi,cmo}
