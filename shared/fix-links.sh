@@ -35,6 +35,13 @@ do
     cd - >/dev/null
   done
 
+  for d in examples/*-calls-Python/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/guest.py .
+    cd - >/dev/null
+  done
+
   for d in examples/*-calls-Fortran/*/$flavor
   do
     cd $d
