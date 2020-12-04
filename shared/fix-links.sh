@@ -65,6 +65,13 @@ do
     cd - >/dev/null
   done
 
+  for d in examples/Fortran-calls-*/*/$flavor
+  do
+    cd $d
+    ln -s ../../../../shared/X-calls-Y/$flavor/host.f90 .
+    cd - >/dev/null
+  done
+
   for d in examples/Python-calls-*/*/$flavor
   do
     cd $d
