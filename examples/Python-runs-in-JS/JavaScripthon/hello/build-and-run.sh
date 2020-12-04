@@ -1,8 +1,8 @@
 # Translate to JavaScript
-pj main.py
+pj main.py >log.txt 2>&1 || (cat log.txt; exit 1)
 
 # Run
 node main.js
 
 # Clean-up
-rm main.js.map main.js
+rm log.txt main.js.map main.js

@@ -1,5 +1,3 @@
-rm -f host.o wrapper.o guest.o a.out
-
 # Compile the Fortran guest and wrapper
 gfortran -c guest.f90 wrapper.f90
 
@@ -7,7 +5,7 @@ gfortran -c guest.f90 wrapper.f90
 gcc -c host.c
 
 # Link
-gcc host.o wrapper.o guest.o -lgfortran
+gfortran host.o wrapper.o guest.o
 
 # Run
 ./a.out
