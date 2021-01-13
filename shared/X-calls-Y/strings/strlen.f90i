@@ -1,0 +1,7 @@
+interface
+  pure function strlen(s) bind(C)
+    use ISO_C_BINDING
+    character(kind=c_char), dimension(*), intent(in) :: s
+    integer(kind=c_int) :: strlen
+  end function
+end interface
