@@ -7,7 +7,7 @@ For the time being, it focuses on the following runtime environments:
 
 - Native: code compiled for the native CPU
 - Interpreted: code run by an interpreter, itself compiled for the native CPU
-- Web browser and Node.js (below, JS): code translated to JavaScript and run by an interpreter un a JavaScript environment
+- Web browser and Node.js (below, JS): code translated to JavaScript and run by an interpreter in a JavaScript environment
 
 And the following languages (with their traditional runtime environment):
 
