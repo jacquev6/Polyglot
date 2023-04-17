@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN set -x \
  && ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime \

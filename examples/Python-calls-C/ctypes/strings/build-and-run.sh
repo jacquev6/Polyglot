@@ -6,3 +6,4 @@ PYTHONPATH=.:$PYTHONPATH python3 ./host.py
 
 # Clean-up
 rm libguest.so
+rm -r __pycache__

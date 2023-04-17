@@ -1,6 +1,9 @@
 # Compile C code as a dynamic library
 gcc -fPIC -shared guest.c -o libguest.so
 
+# Weird
+cp /home/opam/.opam/5.0/lib/ocaml/threads/threads.{cmxa,a}  /home/opam/.opam/5.0/lib/ocaml
+
 # Compile OCaml code
 ocamlfind ocamlopt -cclib -L. -cclib -lguest -linkpkg -package ctypes.foreign wrapper.mli wrapper.ml host.ml
 

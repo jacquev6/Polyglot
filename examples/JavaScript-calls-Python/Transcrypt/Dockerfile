@@ -5,4 +5,4 @@ RUN set -x \
  && apt-get update \
  && apt-get install --yes python3-pip npm \
  && pip3 install transcrypt \
- && npm install --global rollup
+ && npm install --global rollup@2.79.1
