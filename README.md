@@ -32,7 +32,7 @@ Running the examples
 
 To run all the examples provided in this project, you need a reasonably recent version of Bash (other shells might work but are not supported), and a reasonably recent version of Docker.
 
-Then `./run.sh` should run each example in Docker containers.
+Then `./run.sh` will run all examples, each one in a Docker container.
 The first time you run it, it will download and install many things in Docker images; be patient.
 You may want to use the `--verbose` flag to see what's going on.
 You can also limit the scope that you run by passing arguments to the script, *e.g.* `./run.sh examples/C-runs-in-JS`.
@@ -41,7 +41,6 @@ Code organization
 =================
 
 The `shared` directory contains code that doesn't change from one example to the other.
-For example, this could be the legacy code you're trying to use as a guest.
 This organization shows that it can be used as-is (through a wrapper though).
 
 The `examples` directory contains code specific to each example. Each example contains:
