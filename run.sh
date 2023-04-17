@@ -65,3 +65,6 @@ done
 echo "=========="
 echo "=== OK ==="
 echo "=========="
+
+find examples -type f -name host.* | xargs echo "Bad host files:"
+find examples -type f -name guest.* | xargs echo "Bad guest files:"

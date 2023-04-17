@@ -1,8 +1,1 @@
-interface
-  function guest(host)
-    implicit none
-
-    character(len=*) :: host
-    character(len=len(host) + 21) :: guest
-  end function guest
-end interface
+../../../../shared/X-calls-Y/strings/guest.f90i
