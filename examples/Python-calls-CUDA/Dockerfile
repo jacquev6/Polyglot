@@ -5,7 +5,7 @@ RUN set -x \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
       software-properties-common dirmngr gpg-agent `# Required when adding the NVidia APT repository` \
-      python3-dev `# Development version of direct dependencies` \
+      python3-dev python3-pip `# Development version of direct dependencies` \
       g++ pkg-config `# Build tools` \
  && apt-get clean
 
