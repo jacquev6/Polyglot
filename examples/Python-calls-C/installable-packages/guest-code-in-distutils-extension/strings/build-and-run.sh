@@ -4,6 +4,7 @@ cp ../../../../../shared/X-calls-Y/strings/guest.{c,h} package
 
 # Compile extension
 pip3 install ./package >log.txt 2>&1
+rm -r package/{build,wrapper.egg-info}
 
 # Run
 python3 ./host.py

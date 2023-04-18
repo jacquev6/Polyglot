@@ -1,6 +1,9 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN set -x \
- && ln -fs /usr/share/zoneinfo/Europe/London /etc/localtime \
  && apt-get update \
- && apt-get install --yes g++ pkg-config python3-dev
+ && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+      g++ \
+      pkg-config \
+      python3-dev \
+ && apt-get clean

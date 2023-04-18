@@ -4,9 +4,13 @@ FROM ubuntu:22.04
 RUN set -x \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
-      software-properties-common dirmngr gpg-agent `# Required when adding the NVidia APT repository` \
-      python3-dev python3-pip `# Development version of direct dependencies` \
-      g++ pkg-config `# Build tools` \
+      dirmngr \
+      g++ \
+      gpg-agent \
+      pkg-config \
+      python3-dev \
+      python3-pip \
+      software-properties-common \
  && apt-get clean
 
 # NVidia packages
@@ -15,8 +19,8 @@ RUN set -x \
  && add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/ /" \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
-      cuda-cudart-dev-12-1 `# Development version of direct dependencies` \
-      cuda-nvcc-12-1 `# Build tools` \
+      cuda-cudart-dev-12-1 \
+      cuda-nvcc-12-1 \
  && apt-get clean
 
 # Put 'nvcc' in the PATH

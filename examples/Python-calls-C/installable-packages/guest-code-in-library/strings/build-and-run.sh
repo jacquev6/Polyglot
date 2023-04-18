@@ -3,6 +3,7 @@ gcc -fPIC -shared guest.c -o libguest.so
 
 # Compile extension
 pip3 install ./package >log.txt 2>&1
+rm -r package/{build,wrapper.egg-info}
 
 # Run
 LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH python3 ./host.py

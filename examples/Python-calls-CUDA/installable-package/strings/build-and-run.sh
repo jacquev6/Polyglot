@@ -4,7 +4,6 @@ cp ../../../../shared/X-calls-Y/strings/guest.{cu,cuh} package
 
 # Compile extension
 pip3 install ./package >log.txt 2>&1
-# @todo Understand why this is built in place, but Python-calls-C/installable-packages are built in /tmp
 rm -r package/{build,wrapper.egg-info}
 
 # Run

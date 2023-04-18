@@ -1,5 +1,7 @@
-FROM ubuntu:20.04
+FROM ubuntu:22.04
 
 RUN set -x \
  && apt-get update \
- && apt-get install --yes g++
+ && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+      g++ \
+ && apt-get clean
