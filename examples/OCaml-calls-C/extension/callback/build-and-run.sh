@@ -1,6 +1,9 @@
 # Build C code
 gcc -fPIC -shared guest.c -o libguest.so
 
+# Activate OPAM
+eval $(opam env)
+
 # Build OCaml code and C extension
 ocamlfind ocamlopt wrapper_stubs.c -cclib -L. -cclib -lguest wrapper.mli wrapper.ml host.ml
 

@@ -1,15 +1,17 @@
-# @todo Use Ubuntu (we need OCaml and Node.js, so we should not use a base image tailored for one of them)
-FROM ocaml/opam:debian
-
-USER root
+FROM ubuntu:22.04
 
 RUN set -x \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
+      ca-certificates \
+      libffi-dev \
+      m4 \
       nodejs \
+      opam \
+      pkg-config \
  && apt-get clean
 
-USER opam
+RUN opam init --auto-setup --disable-sandboxing
 
-RUN opam install \
+RUN opam install --yes \
       js_of_ocaml

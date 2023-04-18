@@ -1,3 +1,6 @@
+# Activate OPAM
+eval $(opam env)
+
 # Build OCaml code as bytecode
 ocamlfind ocamlc -linkpkg -package js_of_ocaml-ppx -package js_of_ocaml guest.mli guest.ml wrapper.ml -o wrapper.byte
 

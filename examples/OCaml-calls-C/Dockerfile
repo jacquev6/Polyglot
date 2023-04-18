@@ -1,19 +1,18 @@
-# @todo Use Ubuntu
-FROM ocaml/opam:debian
-
-USER root
+FROM ubuntu:22.04
 
 RUN set -x \
  && apt-get update \
  && DEBIAN_FRONTEND=noninteractive apt-get install --yes --no-install-recommends \
-      m4 \
-      pkg-config \
+      ca-certificates \
       libffi-dev \
+      m4 \
+      opam \
+      pkg-config \
  && apt-get clean
 
-USER opam
+RUN opam init --auto-setup --disable-sandboxing
 
-RUN opam install \
+RUN opam install --yes \
       ctypes \
       ctypes-foreign \
       ocamlfind

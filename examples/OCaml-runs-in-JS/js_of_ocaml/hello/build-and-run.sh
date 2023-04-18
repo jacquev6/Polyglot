@@ -1,3 +1,6 @@
+# Activate OPAM
+eval $(opam env)
+
 # Compile OCaml as bytecode
 ocamlc main.ml -o main.byte
 
