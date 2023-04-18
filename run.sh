@@ -66,5 +66,17 @@ echo "=========="
 echo "=== OK ==="
 echo "=========="
 
-find examples -type f -name host.* | xargs echo "Bad host files:"
-find examples -type f -name guest.* | xargs echo "Bad guest files:"
+find shared -type f \
+| while read f
+do
+  basename $f
+done \
+| sort -u \
+| while read f
+do
+  find examples -type f -name $f
+done \
+| while read f
+do
+  echo "This regular file should be a symbolic link to 'shared/.../': $f"
+done
