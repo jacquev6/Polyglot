@@ -46,17 +46,19 @@ do
     docker_path=$(dirname $docker_path)
   done
 
+  docker_tag=polyglot-$(echo $docker_path | tr / - | tr '[:upper:]' '[:lower:]' | sed 's/c++/cpp/g' )
+
   if $verbose
   then
-    echo "Using Dockerfile at $docker_path"
-    docker build $docker_path
+    echo "Using Dockerfile at $docker_path, tagging with $docker_tag"
+    docker build $docker_path --tag $docker_tag
   fi
 
   docker run \
     --rm \
     --volume $PWD:/polyglot \
     --workdir /polyglot/$example \
-    $(docker build $docker_path --quiet) \
+    $(docker build $docker_path --quiet --tag $docker_tag) \
     bash -e $(if $verbose; then echo -x; fi) build-and-run.sh
 
   echo
